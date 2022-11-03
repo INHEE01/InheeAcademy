@@ -1,0 +1,253 @@
+     /* 주의 사항 <style></style>은 사용하지 않는다 */
+     /* 초기화 */
+    * { 
+      font-family: 'Noto Sans KR', sans-serif; 
+      margin: 0px; 
+      padding: 0px;
+    }
+
+   body {
+      width: 960px;
+      background-color:#FAFAA0;
+      margin: 0px auto;  /* 가운데 정렬 */
+   }
+   a {
+      text-decoration:none;
+      color :black;   /* #000000,  #000, rgb(0,0,0) */
+   }
+   a:visited{
+      text-decoration:none;
+      color :black;   /* #000000,  #000, rgb(0,0,0) */
+   }
+   ul {
+      margin: 0px; 
+      padding: 0px;
+   }
+   li {
+     list-style: none;
+    }
+   img{
+    border: 0px;
+    margin: 0px;
+    padding: 0px;
+   }
+   .middle {
+    width: 960px;
+    border-bottom: 1px solid black;
+   }
+    /* header 부분 */
+  .top_content{
+    /* 위치 고정 : 반드시 부모에는  Width, height 값 설정
+                          부모의 position: relative; 로 설정 */
+    width: 960px;
+    height: 180px; /* 수정할 부분 */
+    position: relative;
+    border-bottom: 1px solid black;
+  }
+/* 상단 로고 */
+.logo {
+  left: 15px;
+  top : 15px;
+  position: absolute; 
+  width: 500px;
+  height: 80px;
+}
+.logo > a{
+  display: inline-block;
+  overflow: hidden;
+}
+.logo img{
+  float: left;
+  width: 60px;
+  height: 60px;
+  margin-left: 10px;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+.logo h1{
+  display: inline-block;
+  width: 400px;
+  height: 70px;
+  line-height: 70px; 
+  font-size: 2.5rem;
+  text-align: center;
+/* 상단 로고 부분 끝 */
+
+/* 상단 네비게이션 바 */
+}
+.main_nav {
+  bottom: 5px;
+  border-top: 1px solid black;
+  position: absolute;
+  width: 960px;
+  text-align: center;
+}
+.main_nav li {
+  display: inline-block;
+}
+.main_nav li > a {
+  display: inline-block;
+  padding: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.main_nav li > a:hover{
+  font-weight: 900;
+  color: blue;
+}
+/* 상단 네비게이션 바 끝 */
+
+.section {
+  font-size: 1.1rem;
+  padding-bottom:20px;
+  border-bottom: 1px solid black;
+  background-color: white;
+}
+.section h1 {
+  font-size: 55px; 
+  margin-bottom: 20px; 
+}
+.section h2 {
+  font-size: 45px;
+  margin-bottom: 20px;  
+}
+.section h3 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+/* article */ 
+.article {
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  width:960px;
+}
+.article li {
+  font-size: 1.3rem;
+}
+.article img {
+  width:700px;
+}
+/* teacher_list 선생님들 리스트 */
+.teacher_list {
+  border: 2px solid black;
+  background-color:#FFFA82;
+  color: black;
+  text-align: left;
+  position: relative;
+  left: 70px;
+  width: 800px;
+  height:200px;
+  margin-bottom: 20px;
+  margin-left: 10px;
+
+}
+.teacher_list img {
+  color: black;
+  float: left;
+  margin-right: 30px;
+  padding: 0px;
+  width: 150px;
+  height:200px;
+  background-color: white;
+}
+.content li {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+/* teacher_list 선생님들 리스트 */
+/* footer 정보 */
+.footer {
+  margin-top: 10px;
+  margin-left: 10px;
+  padding-bottom: 10px;
+}
+/* footer 정보 끝*/
+/* 테이블 정보 */ 
+table {
+  border-collapse: collapse;
+  font-size: 1.4rem;
+  position: relative;
+  left: 35px;
+  border: 3px solid black;
+}
+.table_title {
+ width: 280px;
+ height: 100px;
+ background-color: bisque;
+}
+.table_content {
+  width : 600px;
+  height: 100px;
+  background-color: gold;
+}
+/* 테이블 정보 끝 */
+.passer_title {
+  font-size: 3.0rem;
+}
+/* map(지도) */
+.map_content {
+  background-color:	#FFFA82;
+  position: relative;
+  left: 120px;
+  width: 720px;
+  height: 600px;
+}
+.map {
+  border: 1px solid black;
+  position:relative;
+  left: 55px;
+  width: 600px;
+  height: 451px;
+  margin-bottom: 10px;
+}
+/* map 끝 */ 
+/* 합격자 명단 */
+.passer_content {
+  position: relative;
+  left: 120px;
+  width: 720px;
+  background-color:#FFFA82;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+/* 합격자 명단 끝 */
+/* 학원소개 */
+.education_plan {
+  position: relative;
+  left: 60px;
+  background-color: #FFF0F5;
+  width: 840px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.education_plan li {
+  margin-left: 10px;
+  padding: 0px;
+}
+.step {
+  position: relative;
+  left: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.plan_left {
+  float: left;
+  margin-right: 20px;
+  width:150px;
+  height:150px;
+  background-color: #FFF0F5;
+}
+.plan_left img {
+  width: 150px;
+  height: 150px;
+}
+.plan_right {
+  text-align: left;
+  background-color: #FFF0F5;
+  width:800px;
+  height:150px;
+
+}
+/* 학원소개 */ 
